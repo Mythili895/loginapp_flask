@@ -1,0 +1,14 @@
+http://flask.pocoo.org/
+http://flask.pocoo.org/snippets/20/
+https://www.youtube.com/watch?v=ZVGwqnjOKjk
+
+http://codehandbook.org/python-flask-jquery-ajax-post/
+
+http://flask.pocoo.org/docs/0.12/patterns/jquery/
+
+https://api.jquery.com/
+
+https://www.w3schools.com/jquery/
+
+
+https://extensionizr.com/!#{"modules":["hidden-mode","with-bg","with-persistent-bg","no-options","no-override"],"boolean_perms":[],"match_ptrns":[]}

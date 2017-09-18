@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+{% block body %}
+<form action="/newexist" method="POST">
+
+    
+  <center>  <button type="submit" name="submit" value="newuser" >New User</button>  
+
+    <button type="submit" name="submit" value="existinguser" >Existing User </button> <center> <br>
+</form>
+
+<h2>
+Actions Logged:
+</h2>
+<h3> 1.mouse movement trajectory:  </h3> To understand the user's behaviour of handling and moving the mouse.This is very useful for the UI designer
+to design the website according to the way the page is handled by the user. 
+
+<h3> 2.Mouse scroll: </h3> Scrolling of the page up or down will denote the interest of the user in that particular page.
+
+<h3> 3.user navigating to the next page number of the answers of the post): </h3> Navigating to the various other pages denotes that either the user is not satisfied with the answers in
+that particular page or the user tries to explore all kinds of answers possible.
+
+<h3> 4.vote up/down: </h3> Indicating the user's satisfaction over the post.
+
+<h3> 5.clicking and typing in the text area (comment section ): </h3> Posting user's answers to the query.
+
+<h3> 6.Checking the vote count : </h3> Users analysing the vote counts for the post to understand about the correctness of the post.
+
+<h3> 7.Marking favourite: </h3> Clicking on the star adds the post to user's favourite which he can view it later.
+
+<h3> 8.Clicking on a link: </h3> Clicking on the link explains more about the path of the user's navigation over the topics.It also makes designer to 
+understand more about the user's understanding.
+
+<h3> 9.double clicking  </h3> Double click generally used to selecting paragraphs or texts.
+
+<h3> 10.Checking the views : </h3> Users can understand about the popularity of the post or frequency of the visits on the post.
+
+<h3> 11.closing the page: </h3> To know that user has closed the page. 
+
+
+{% endblock %}
+
+</body>
+</html>

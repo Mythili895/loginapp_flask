@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+{% block body %}
+
+<form action="/succ_signup" method="POST">
+  User name:<br>
+  <input type="text" name="username" value="">
+  <br>
+  Password:<br>
+  <input type="text" name="password" value="" >
+  <br>
+  confirm Password:<br>
+  <input type="text" name="confirm password" value="" >
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form> 
+
+
+
+
+{% endblock %}
+
+</body>
+</html>
