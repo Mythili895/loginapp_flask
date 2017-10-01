@@ -1,8 +1,18 @@
 <!doctype html>
-<link rel="stylesheet" href="/static/style.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 {% if name %}
 
 	<h1> <center> Welcome {{ name }} <center> </h1>
+	
+	
+
+	<div class="w3-container">
+    <center><h2>visualisation </h2></center>
+    <center><a href="/visualization" class="w3-button w3-black"> VISUALISATION </a> </center>
+	</div>
+	
+	
 	<h3>  Login history of you!!</h3>
 	<form action="/" method="POST">
 	{% for i in t %}
@@ -11,9 +21,16 @@
 	{% endfor %}	
 
 	click <a href="https://stackoverflow.com/questions/tagged/java?sort=frequent&pageSize=15" onclick={logging()} target="_blank">  here </a> for stack overflow page
+	
+	 
   
   <center><input type="submit" value="Logout" name = "Logout"> <center>
 </form> 
+
+<br> <br> <br>
+
+
+
 
 {% else %}	
 	<h1> please log in</h1>

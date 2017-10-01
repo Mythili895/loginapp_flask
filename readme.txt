@@ -15,6 +15,8 @@ Note: the extension was created with extensionzr and it was downloaded in folder
 
 ps: I have written mouse movement trajectory to a different file username_user_mousetraj to easily differentiate between other logs and mouse trajectory info.
 
+PS: readme_Web page interactions -analysis.doc has detailed secription about visualisation.
+
 
 
 

@@ -13,47 +13,55 @@ chrome.extension.sendMessage({}, function(response) {
 
 		$( "p" ).click(function() {
 			var message = "You clicked a paragraph!"
-			chrome.extension.sendMessage(message);
+			var pageURL = $(location).attr("href");
+			chrome.extension.sendMessage(message + " , " +pageURL);
     		
 	
 	});
 	$( ".star-off" ).click(function() {
 			var message = "You clicked to make it favourite!"
-			chrome.extension.sendMessage(message);
+			var pageURL = $(location).attr("href");
+			chrome.extension.sendMessage(message + " , " +pageURL);
     		
 	
 	});
 	$( "a" ).click(function() {
 			var message = "You clicked a link!"
-			chrome.extension.sendMessage(message);
+			var pageURL = $(location).attr("href");
+			chrome.extension.sendMessage(message + " , " +pageURL);
+			
     		
 	
 	});
 	
 	$( ".-img" ).click(function() {
 			var message = "You clicked an image!"
-			chrome.extension.sendMessage(message);
+			var pageURL = $(location).attr("href");
+			chrome.extension.sendMessage(message + " , " +pageURL);
     		
 	
 	});
 	
 	$( ".page-numbers" ).click(function() {
 			var message = "You changed to different page !"
-			chrome.extension.sendMessage(message);
+			var pageURL = $(location).attr("href");
+			chrome.extension.sendMessage(message + " , " +pageURL);
     		
 	
 	});
 	
 	$( "question-hyperlink" ).click(function() {
 			var message = "You changed to different question !"
-			chrome.extension.sendMessage(message);
+			var pageURL = $(location).attr("href");
+			chrome.extension.sendMessage(message + " , " +pageURL);
     		
 	
 	});
 	
 	$( ".vote-up-off" ).click(function() {
 			var message = "You clicked a upvote!"
-			chrome.extension.sendMessage(message);
+			var pageURL = $(location).attr("href");
+			chrome.extension.sendMessage(message + " , " +pageURL);
     		
 	
 	});
@@ -62,19 +70,22 @@ chrome.extension.sendMessage({}, function(response) {
 	
 	$( ".vote-down-off" ).click(function() {
 			var message = "You clicked a downvote!"
-			chrome.extension.sendMessage(message);
+			var pageURL = $(location).attr("href");
+			chrome.extension.sendMessage(message + " , " +pageURL);
     		
 	
 	});
 	$( window ).scroll(function() {
 			var message = "You scrolled!"
-			chrome.extension.sendMessage(message);
+			var pageURL = $(location).attr("href");
+			chrome.extension.sendMessage(message + " , " +pageURL);
     		
 });
 	
 	$("p").hover(function(){
 		var message = "Your mouse over a paragraph!"
-		chrome.extension.sendMessage(message);
+		var pageURL = $(location).attr("href");
+		chrome.extension.sendMessage(message + " , " +pageURL);
         
     });
 	
@@ -82,7 +93,8 @@ chrome.extension.sendMessage({}, function(response) {
 
     $("input").select(function(){
     	var message = "You selected input text!"
-		chrome.extension.sendMessage(message);
+		var pageURL = $(location).attr("href");
+		chrome.extension.sendMessage(message + " , " +pageURL);
         
     });
 	
@@ -90,9 +102,14 @@ chrome.extension.sendMessage({}, function(response) {
 	
 	$('textarea').on('mouseup', function() { 
 	    var message = "You selected text area!"
-		chrome.extension.sendMessage(message);
+		var pageURL = $(location).attr("href");
+		chrome.extension.sendMessage(message + " , " +pageURL);
 		$("textarea").keypress(function(){
-        chrome.extension.sendMessage("you are typing in text area!!")});
+        message = "you are typing in text area!!"
+		var pageURL = $(location).attr("href");
+		chrome.extension.sendMessage(message + " , " +pageURL);
+		
+		});
         
 	});
 	
@@ -101,50 +118,58 @@ chrome.extension.sendMessage({}, function(response) {
   var clientCoords = "( " + event.clientX + ", " + event.clientY + " )";
   console.log( "mouse movement trajectory: " + pageCoords);
   var message = "mouse movement trajectory: " + pageCoords
-  chrome.extension.sendMessage(message);
+  var pageURL = $(location).attr("href");
+  chrome.extension.sendMessage(message + "--" +pageURL);
 });
 	
 	
 	
 	$('.views.supernova').hover(function(){
 		var message = "you noticed the views!"
-		chrome.extension.sendMessage(message);
+		var pageURL = $(location).attr("href");
+		chrome.extension.sendMessage(message + " , " +pageURL);
         console.log("you noticed the views!");
     });
 	
 	$('.views.hot').hover(function(){
 		var message = "you noticed the views!"
-		chrome.extension.sendMessage(message);
+		var pageURL = $(location).attr("href");
+		chrome.extension.sendMessage(message + " , " +pageURL);
         console.log("you noticed the views!");
     });
 	
 	$('.status.answered-accepted').hover(function(){
 		var message = "you noticed the answers accepted!"
-		chrome.extension.sendMessage(message);
+		var pageURL = $(location).attr("href");
+		chrome.extension.sendMessage(message + " , " +pageURL);
         console.log("you noticed the answers accepted!");
     });
 	
 	$('.viewcount').hover(function(){
 		var message = "you noticed the vote count of the post!"
-		chrome.extension.sendMessage(message);
+		var pageURL = $(location).attr("href");
+		chrome.extension.sendMessage(message + " , " +pageURL);
         
     });
 
     $("p").dblclick(function(){
         var message = "You double clicked!"
-		chrome.extension.sendMessage(message);
+		var pageURL = $(location).attr("href");
+		chrome.extension.sendMessage(message + " , " +pageURL);
         
     });
 	
 	$( window ).unload(function() {
 		var message = "You closed the page"
 		
-	chrome.extension.sendMessage(message); });
+	var pageURL = $(location).attr("href");
+	chrome.extension.sendMessage(message + " , " +pageURL); });
 		
 	$( window ).load(function() {
 		var message = "You opened the page"
 		
-		chrome.extension.sendMessage(message);	
+		var pageURL = $(location).attr("href");
+		chrome.extension.sendMessage(message + " , " +pageURL);	
         
   
 });
